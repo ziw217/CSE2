@@ -8,7 +8,7 @@ public class ToxHex {//Main method
    {
 
 
-		System.out.println("Please enter three numbers representing RGB values:");
+		System.out.println("Please enter three numbers representing RGB values:"); // The numbers of representing
 		Scanner in = new Scanner(System.in);
 		int [] dec = new int[3];
 		String [] hex2 = new String[3];
@@ -16,7 +16,7 @@ public class ToxHex {//Main method
 		for(int i = 0; i < 3; i++)
 		{
 
-			if(in.hasNextInt() && dec[i] >= 0 && dec[i] <= 255)
+			if(in.hasNextInt() && dec[i] >= 0 && dec[i] <= 255) // Decimal to Hexadecimal
 			{
 				dec[i] = in.nextInt();
 				int b = dec[i] % 16;
@@ -62,12 +62,12 @@ public class ToxHex {//Main method
 
 			else if(in.hasNextInt() &&( dec[i] < 0 || dec[i] > 255))
 			{
-				System.out.println("Sorry, you must enter values between 0-255.");
+				System.out.println("Sorry, you must enter values between 0-255."); // range from 0 -255
 			}
 
 			else
 			{
-				System.out.println("Sorry, your input must consist of integers.");
+				System.out.println("Sorry, your input must consist of integers."); // range should include integers
 			}
 		}
 
