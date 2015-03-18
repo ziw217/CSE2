@@ -25,11 +25,15 @@ double totalSockcost$;
 double totalGlassesCost$;
 double totalEnvelopesCost$;
 
-   System.out.println("total socks cost is "+ (nSocks*sockCost$)+ "dollars and had" + (taxPercent*nSocks*sockCost$)+ "total Tax for socks" ); // total socks
+   System.out.println("total socks cost is "+ (nSocks*sockCost$)+ "dollars and had" + (taxPercent*nSocks*sockCost$)+ "total Tax for socks" );
+   //total socks cost
    System.out.println("total Glasses cost" + (nGlasses*glassCost$) + "dollars and had" + (taxPercent*nGlasses*glassCost$)+ "total Tax for glasses" );
+   //total glasses cost
    System.out.println("total Envelopes cost" + (nEnvelopes*envelopeCost$) + " cost and tax " + (taxPercent*nEnvelopes*envelopeCost$)+ "total tax for envelopes" );
+   //total envelops cost
    System.out.println("total cost is" + (nSocks*sockCost$+nGlasses*glassCost$+nEnvelopes*envelopeCost$)+"without tax" );
+   //total cost without tax
    System.out.println("Actutally paid(include tax) " + (nSocks*sockCost$*taxPercent+nSocks*sockCost$+nGlasses*glassCost$*taxPercent+nGlasses*glassCost$+nEnvelopes*envelopeCost$*taxPercent+nEnvelopes*envelopeCost$)+"with tax" );
-   
+   //total cost with tax
   }
  }
